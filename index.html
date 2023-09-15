@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros Compostos</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <main class="principal">
+
+        <h1 id="titulo" >Cálculo de Juros Por Dia</h1>
+
+        <div class="campos-calculo">
+            
+            <p>Insira a unidade de tempo desejada (dias, meses, anos, etc):</p>
+            <select id="unidade-tempo">
+                <option class="opcao-tempo" value="dias">Dias</option>
+                <option class="opcao-tempo" value="meses">Meses</option>
+                <option class="opcao-tempo" value="anos">Anos</option>
+            </select>
+            
+            <p>Insira o valor inicial aplicado ao juros:</p>
+            <input id="valorInicial" type="number" placeholder="Digite o valor inicial">
+            
+            <p id="parag-juros">Insira a porcentagem diária de juros (exemplo: 0.23):</p>
+            <input id="juros" type="number" placeholder="Digite o juros">
+            
+            <p id="parag-periodo">Insira a quantidade de dias em que o juros comeu:</p>
+            <input id="dias" type="number" placeholder="Digite os dias" >
+
+            <button id="botaoCalcular">Calcular</button>
+
+            <script src="./index.js"></script>
+            <script src="./unidadestempo"></script>
+
+        </div>        
+        
+        <div class="campo-resultado">
+            <p id="string"></p>
+            <p id="segundaString"></p>
+        </div>
+    </main>
+
+</body>
+</html>
