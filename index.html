@@ -11,30 +11,25 @@
 
     <main class="principal">
 
-        <h1 id="titulo" >Cálculo de Juros Por Dia</h1>
+        <h1 id="titulo" >Cálculo de Rendimento com Juros Compostos</h1>
 
         <div class="campos-calculo">
             
-            <p>Insira a unidade de tempo desejada (dias, meses, anos, etc):</p>
-            <select id="unidade-tempo">
-                <option class="opcao-tempo" value="dias">Dias</option>
-                <option class="opcao-tempo" value="meses">Meses</option>
-                <option class="opcao-tempo" value="anos">Anos</option>
-            </select>
-            
-            <p>Insira o valor inicial aplicado ao juros:</p>
+            <p>Insira o valor do capital aplicado inicialmente:</p>
             <input id="valorInicial" type="number" placeholder="Digite o valor inicial">
             
-            <p id="parag-juros">Insira a porcentagem diária de juros (exemplo: 0.23):</p>
+            <p id="parag-juros">Insira o valor da <strong>porcentagem (%)</strong> de rendimento:</p>
             <input id="juros" type="number" placeholder="Digite o juros">
             
-            <p id="parag-periodo">Insira a quantidade de dias em que o juros comeu:</p>
+            <p id="parag-periodo">Insira a quantidade de ciclos de tempo do rendimento:</p>
+                        
             <input id="dias" type="number" placeholder="Digite os dias" >
+            
+            <p id="parag-aviso">* Exemplo: Digitando "2" serão considerados 2 ciclos de tempo. Assim, a porcentagem inserida será aplicada 2 vezes. Dessa forma, você pode considerar qualquer unidade de tempo.*</p>
 
             <button id="botaoCalcular">Calcular</button>
 
             <script src="./index.js"></script>
-            <script src="./unidadestempo"></script>
 
         </div>        
         

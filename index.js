@@ -23,16 +23,19 @@ function calcular(){
     while(iterador <= dias){
 
         valorInicial += (porcent*valorInicial);
-        let dif = valorInicial - referencia;
-        string.innerHTML += ` A dívida do ${iterador}º dia é R$${((dif).toFixed(2))}. </br>`
         
-        console.log(`A porcentagem é ${porcent}.`);
+        let dif = valorInicial - referencia;
+
+        string.innerHTML += `O rendimento acumulado do ${iterador}º ciclo é R$${((dif).toFixed(2))}. </br>`
+
         console.log(`O valor inicial é ${(valorInicial).toFixed(2)}.`);
+        console.log(`A porcentagem é ${porcent}.`);
         console.log(`A diferença é ${(dif).toFixed(2)}.`);
         console.log(`A referencia é ${referencia}.`);
         
         iterador++;
     }
 
-    segundaString.innerHTML = `O valor final a ser pago será R$ ${parseFloat(valorInicial - referencia).toFixed(2)}. </br>`
+    segundaString.innerHTML = `Rendimento final: R$ ${parseFloat(valorInicial - referencia).toFixed(2)}. </br>`
+    segundaString.innerHTML += `Valor final acumulado: R$ ${parseFloat(valorInicial).toFixed(2)}. </br>`
 }

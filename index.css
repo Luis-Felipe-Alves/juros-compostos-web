@@ -46,6 +46,10 @@ h1{
     font-weight: 600;
 }
 
+#parag-aviso{
+    font-size: 1rem;
+}
+
 .campos-calculo select{
     padding: 1rem;
     font-size: 1rem;
